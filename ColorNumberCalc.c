@@ -74,12 +74,12 @@ int GetPairNumberFromColor(const ColorPair* colorPair) {
 * ************************************************************************* */
 void ColorCodingPrint(void) {
 	
-	printf("\nColor Code Colors Name\n");
+	printf("\nColor Code    Colors Name\n");
 	for(int i=0; i<numberOfMajorColors; i++)
 	{
 		for(int j=0; j<numberOfMinorColors; j++)
 		{			
-			printf("%02d         %s-%s\n",i+j,MajorColorNames[i],MinorColorNames[j]);
+			printf("%02d            %s-%s\n",((i*numberOfMajorColors)+j+1),MajorColorNames[i],MinorColorNames[j]);
 		}
 	}
 }
