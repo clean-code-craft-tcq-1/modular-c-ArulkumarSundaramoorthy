@@ -18,7 +18,7 @@ typedef struct {
 const int MAX_COLORPAIR_NAME_CHARS = 16;
 
 /* ***************************** Prototypes ***************************** */
-ColorPair GetColorFromPairNumber(int pairNumber):
+ColorPair GetColorFromPairNumber(int pairNumber);
 void testPairToNumber(enum MajorColor major,enum MinorColor minor,int expectedPairNumber);
 int GetPairNumberFromColor(const ColorPair* colorPair);
 void testNumberToPair(int pairNumber,enum MajorColor expectedMajor,enum MinorColor expectedMinor);
