@@ -15,7 +15,7 @@ typedef struct {
     enum MinorColor minorColor;
 } ColorPair;
 
-const int MAX_COLORPAIR_NAME_CHARS = 16;
+#define MAX_COLORPAIR_NAME_CHARS 16
 
 /* ***************************** Prototypes ***************************** */
 ColorPair GetColorFromPairNumber(int pairNumber);
